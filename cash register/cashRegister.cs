@@ -82,14 +82,7 @@ namespace cash_register
         {
             try
             {
-                burgerNum = Convert.ToDouble(burgerInput.Text);
-                fryNum = Convert.ToDouble(fryInput.Text);
-                drinkNum = Convert.ToDouble(drinkInput.Text);
-                tendered = Convert.ToDouble(tenderedInput.Text); //placed here to prevent printing receipt when there are bad inputs
-
-                
-
-
+              
                 receiptLabel.Text = "\nWelcome to The Burger Joint"; //print text
                 printSound.Play();                                  //play print sound
                 this.Refresh();                                     //update screen
