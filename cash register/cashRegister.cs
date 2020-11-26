@@ -154,6 +154,9 @@ namespace cash_register
                 Thread.Sleep(800);
 
                 receiptLine11.Text = "Have a Burger-iffic Day!";
+                printSound.Play();
+                this.Refresh();
+                Thread.Sleep(800);
 
             }
             catch
