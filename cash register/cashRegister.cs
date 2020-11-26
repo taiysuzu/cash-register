@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*Taiyo Suzuki
+ * Nov. 26, 2020
+ * Cash register program to correctly calculate prices and create a receipt.
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
