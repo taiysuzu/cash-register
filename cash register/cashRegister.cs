@@ -207,7 +207,7 @@ namespace cash_register
             burgerInput.Text = "";
             fryInput.Text = "";
             drinkInput.Text = "";
-            tenderedInput.Text = "";//reset UI values
+            tenderedInput.Text = ""; //reset UI values
         }
 
     }
