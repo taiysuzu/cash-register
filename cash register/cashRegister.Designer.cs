@@ -52,24 +52,6 @@
             this.totalOutput = new System.Windows.Forms.Label();
             this.changeOutput = new System.Windows.Forms.Label();
             this.receiptLine1 = new System.Windows.Forms.Label();
-            this.receiptLine2 = new System.Windows.Forms.Label();
-            this.receiptLine3 = new System.Windows.Forms.Label();
-            this.receiptLine3Right = new System.Windows.Forms.Label();
-            this.receiptLine4Right = new System.Windows.Forms.Label();
-            this.receiptLine5Right = new System.Windows.Forms.Label();
-            this.receiptLine5 = new System.Windows.Forms.Label();
-            this.receiptLine4 = new System.Windows.Forms.Label();
-            this.receiptLine6 = new System.Windows.Forms.Label();
-            this.receiptLine7 = new System.Windows.Forms.Label();
-            this.receiptLine8 = new System.Windows.Forms.Label();
-            this.receiptLine10 = new System.Windows.Forms.Label();
-            this.receiptLine9 = new System.Windows.Forms.Label();
-            this.receiptLine6Right = new System.Windows.Forms.Label();
-            this.receiptLine7Right = new System.Windows.Forms.Label();
-            this.receiptLine8Right = new System.Windows.Forms.Label();
-            this.receiptLine9Right = new System.Windows.Forms.Label();
-            this.receiptLine10Right = new System.Windows.Forms.Label();
-            this.receiptLine11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // menuLabel
@@ -228,6 +210,7 @@
             this.receiptLabel.Size = new System.Drawing.Size(180, 285);
             this.receiptLabel.TabIndex = 21;
             this.receiptLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.receiptLabel.Click += new System.EventHandler(this.ReceiptLabel_Click);
             // 
             // subTotalOutput
             // 
@@ -274,191 +257,11 @@
             this.receiptLine1.Size = new System.Drawing.Size(0, 13);
             this.receiptLine1.TabIndex = 26;
             // 
-            // receiptLine2
-            // 
-            this.receiptLine2.AutoSize = true;
-            this.receiptLine2.BackColor = System.Drawing.Color.White;
-            this.receiptLine2.Location = new System.Drawing.Point(174, 64);
-            this.receiptLine2.Name = "receiptLine2";
-            this.receiptLine2.Size = new System.Drawing.Size(0, 13);
-            this.receiptLine2.TabIndex = 27;
-            // 
-            // receiptLine3
-            // 
-            this.receiptLine3.AutoSize = true;
-            this.receiptLine3.BackColor = System.Drawing.Color.White;
-            this.receiptLine3.Location = new System.Drawing.Point(174, 90);
-            this.receiptLine3.Name = "receiptLine3";
-            this.receiptLine3.Size = new System.Drawing.Size(0, 13);
-            this.receiptLine3.TabIndex = 28;
-            // 
-            // receiptLine3Right
-            // 
-            this.receiptLine3Right.BackColor = System.Drawing.Color.White;
-            this.receiptLine3Right.Location = new System.Drawing.Point(225, 90);
-            this.receiptLine3Right.Name = "receiptLine3Right";
-            this.receiptLine3Right.Size = new System.Drawing.Size(70, 13);
-            this.receiptLine3Right.TabIndex = 31;
-            this.receiptLine3Right.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // receiptLine4Right
-            // 
-            this.receiptLine4Right.BackColor = System.Drawing.Color.White;
-            this.receiptLine4Right.Location = new System.Drawing.Point(225, 103);
-            this.receiptLine4Right.Name = "receiptLine4Right";
-            this.receiptLine4Right.Size = new System.Drawing.Size(70, 13);
-            this.receiptLine4Right.TabIndex = 32;
-            this.receiptLine4Right.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // receiptLine5Right
-            // 
-            this.receiptLine5Right.BackColor = System.Drawing.Color.White;
-            this.receiptLine5Right.Location = new System.Drawing.Point(225, 116);
-            this.receiptLine5Right.Name = "receiptLine5Right";
-            this.receiptLine5Right.Size = new System.Drawing.Size(70, 13);
-            this.receiptLine5Right.TabIndex = 33;
-            this.receiptLine5Right.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // receiptLine5
-            // 
-            this.receiptLine5.AutoSize = true;
-            this.receiptLine5.BackColor = System.Drawing.Color.White;
-            this.receiptLine5.Location = new System.Drawing.Point(174, 116);
-            this.receiptLine5.Name = "receiptLine5";
-            this.receiptLine5.Size = new System.Drawing.Size(0, 13);
-            this.receiptLine5.TabIndex = 34;
-            // 
-            // receiptLine4
-            // 
-            this.receiptLine4.AutoSize = true;
-            this.receiptLine4.BackColor = System.Drawing.Color.White;
-            this.receiptLine4.Location = new System.Drawing.Point(174, 103);
-            this.receiptLine4.Name = "receiptLine4";
-            this.receiptLine4.Size = new System.Drawing.Size(0, 13);
-            this.receiptLine4.TabIndex = 35;
-            // 
-            // receiptLine6
-            // 
-            this.receiptLine6.AutoSize = true;
-            this.receiptLine6.BackColor = System.Drawing.Color.White;
-            this.receiptLine6.Location = new System.Drawing.Point(174, 148);
-            this.receiptLine6.Name = "receiptLine6";
-            this.receiptLine6.Size = new System.Drawing.Size(0, 13);
-            this.receiptLine6.TabIndex = 36;
-            // 
-            // receiptLine7
-            // 
-            this.receiptLine7.AutoSize = true;
-            this.receiptLine7.BackColor = System.Drawing.Color.White;
-            this.receiptLine7.Location = new System.Drawing.Point(174, 161);
-            this.receiptLine7.Name = "receiptLine7";
-            this.receiptLine7.Size = new System.Drawing.Size(0, 13);
-            this.receiptLine7.TabIndex = 37;
-            // 
-            // receiptLine8
-            // 
-            this.receiptLine8.AutoSize = true;
-            this.receiptLine8.BackColor = System.Drawing.Color.White;
-            this.receiptLine8.Location = new System.Drawing.Point(174, 174);
-            this.receiptLine8.Name = "receiptLine8";
-            this.receiptLine8.Size = new System.Drawing.Size(0, 13);
-            this.receiptLine8.TabIndex = 38;
-            // 
-            // receiptLine10
-            // 
-            this.receiptLine10.AutoSize = true;
-            this.receiptLine10.BackColor = System.Drawing.Color.White;
-            this.receiptLine10.Location = new System.Drawing.Point(174, 220);
-            this.receiptLine10.Name = "receiptLine10";
-            this.receiptLine10.Size = new System.Drawing.Size(0, 13);
-            this.receiptLine10.TabIndex = 39;
-            // 
-            // receiptLine9
-            // 
-            this.receiptLine9.AutoSize = true;
-            this.receiptLine9.BackColor = System.Drawing.Color.White;
-            this.receiptLine9.Location = new System.Drawing.Point(174, 207);
-            this.receiptLine9.Name = "receiptLine9";
-            this.receiptLine9.Size = new System.Drawing.Size(0, 13);
-            this.receiptLine9.TabIndex = 40;
-            // 
-            // receiptLine6Right
-            // 
-            this.receiptLine6Right.BackColor = System.Drawing.Color.White;
-            this.receiptLine6Right.Location = new System.Drawing.Point(225, 148);
-            this.receiptLine6Right.Name = "receiptLine6Right";
-            this.receiptLine6Right.Size = new System.Drawing.Size(70, 13);
-            this.receiptLine6Right.TabIndex = 41;
-            this.receiptLine6Right.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // receiptLine7Right
-            // 
-            this.receiptLine7Right.BackColor = System.Drawing.Color.White;
-            this.receiptLine7Right.Location = new System.Drawing.Point(225, 161);
-            this.receiptLine7Right.Name = "receiptLine7Right";
-            this.receiptLine7Right.Size = new System.Drawing.Size(70, 13);
-            this.receiptLine7Right.TabIndex = 42;
-            this.receiptLine7Right.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // receiptLine8Right
-            // 
-            this.receiptLine8Right.BackColor = System.Drawing.Color.White;
-            this.receiptLine8Right.Location = new System.Drawing.Point(225, 174);
-            this.receiptLine8Right.Name = "receiptLine8Right";
-            this.receiptLine8Right.Size = new System.Drawing.Size(70, 13);
-            this.receiptLine8Right.TabIndex = 43;
-            this.receiptLine8Right.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // receiptLine9Right
-            // 
-            this.receiptLine9Right.BackColor = System.Drawing.Color.White;
-            this.receiptLine9Right.Location = new System.Drawing.Point(225, 207);
-            this.receiptLine9Right.Name = "receiptLine9Right";
-            this.receiptLine9Right.Size = new System.Drawing.Size(70, 13);
-            this.receiptLine9Right.TabIndex = 44;
-            this.receiptLine9Right.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // receiptLine10Right
-            // 
-            this.receiptLine10Right.BackColor = System.Drawing.Color.White;
-            this.receiptLine10Right.Location = new System.Drawing.Point(225, 220);
-            this.receiptLine10Right.Name = "receiptLine10Right";
-            this.receiptLine10Right.Size = new System.Drawing.Size(70, 13);
-            this.receiptLine10Right.TabIndex = 45;
-            this.receiptLine10Right.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // receiptLine11
-            // 
-            this.receiptLine11.AutoSize = true;
-            this.receiptLine11.BackColor = System.Drawing.Color.White;
-            this.receiptLine11.Location = new System.Drawing.Point(174, 256);
-            this.receiptLine11.Name = "receiptLine11";
-            this.receiptLine11.Size = new System.Drawing.Size(0, 13);
-            this.receiptLine11.TabIndex = 46;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(351, 343);
-            this.Controls.Add(this.receiptLine11);
-            this.Controls.Add(this.receiptLine10Right);
-            this.Controls.Add(this.receiptLine9Right);
-            this.Controls.Add(this.receiptLine8Right);
-            this.Controls.Add(this.receiptLine7Right);
-            this.Controls.Add(this.receiptLine6Right);
-            this.Controls.Add(this.receiptLine9);
-            this.Controls.Add(this.receiptLine10);
-            this.Controls.Add(this.receiptLine8);
-            this.Controls.Add(this.receiptLine7);
-            this.Controls.Add(this.receiptLine6);
-            this.Controls.Add(this.receiptLine4);
-            this.Controls.Add(this.receiptLine5);
-            this.Controls.Add(this.receiptLine5Right);
-            this.Controls.Add(this.receiptLine4Right);
-            this.Controls.Add(this.receiptLine3Right);
-            this.Controls.Add(this.receiptLine3);
-            this.Controls.Add(this.receiptLine2);
             this.Controls.Add(this.receiptLine1);
             this.Controls.Add(this.changeOutput);
             this.Controls.Add(this.totalOutput);
@@ -515,24 +318,6 @@
         private System.Windows.Forms.Label totalOutput;
         private System.Windows.Forms.Label changeOutput;
         private System.Windows.Forms.Label receiptLine1;
-        private System.Windows.Forms.Label receiptLine2;
-        private System.Windows.Forms.Label receiptLine3;
-        private System.Windows.Forms.Label receiptLine3Right;
-        private System.Windows.Forms.Label receiptLine4Right;
-        private System.Windows.Forms.Label receiptLine5Right;
-        private System.Windows.Forms.Label receiptLine5;
-        private System.Windows.Forms.Label receiptLine4;
-        private System.Windows.Forms.Label receiptLine6;
-        private System.Windows.Forms.Label receiptLine7;
-        private System.Windows.Forms.Label receiptLine8;
-        private System.Windows.Forms.Label receiptLine10;
-        private System.Windows.Forms.Label receiptLine9;
-        private System.Windows.Forms.Label receiptLine6Right;
-        private System.Windows.Forms.Label receiptLine7Right;
-        private System.Windows.Forms.Label receiptLine8Right;
-        private System.Windows.Forms.Label receiptLine9Right;
-        private System.Windows.Forms.Label receiptLine10Right;
-        private System.Windows.Forms.Label receiptLine11;
     }
 }
 

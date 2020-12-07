@@ -2,6 +2,7 @@
  * Nov. 26, 2020
  * Cash register program to correctly calculate prices and create a receipt.
  */
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,12 +19,12 @@ namespace cash_register
 {
     public partial class Form1 : Form
     {
-        double taxRate = 0.13;
+        double taxRate = 0.13;//constants
         double burgerPrice = 4.99;
         double fryPrice = 2.25;
-        double drinkPrice = 1.50;//constants
+        double drinkPrice = 1.50;
 
-        double burgerNum = 0;
+        double burgerNum = 0;//variables
         double fryNum = 0;
         double drinkNum = 0;
         double burgerCost = 0;
@@ -33,7 +34,7 @@ namespace cash_register
         double taxAmount = 0;
         double totalCost = 0;
         double tendered = 0;
-        double change = 0; //variables
+        double change = 0; 
 
         SoundPlayer printSound = new SoundPlayer(Properties.Resources._16942__cognito_perceptu__receipt_printer);//sound player for receipt sound
 
@@ -47,20 +48,20 @@ namespace cash_register
         {
             try
             {
-                burgerNum = Convert.ToDouble(burgerInput.Text);
+                burgerNum = Convert.ToDouble(burgerInput.Text);//grab the number of each item
                 fryNum = Convert.ToDouble(fryInput.Text);
-                drinkNum = Convert.ToDouble(drinkInput.Text); //grab the number of each item
+                drinkNum = Convert.ToDouble(drinkInput.Text); 
 
-                burgerCost = burgerPrice * burgerNum;
+                burgerCost = burgerPrice * burgerNum;// math to calculate prices
                 fryCost = fryPrice * fryNum;
                 drinkCost = drinkPrice * drinkNum;
                 cost = burgerCost + fryCost + drinkCost;
                 taxAmount = cost * taxRate;
-                totalCost = taxAmount + cost;// math to calculate prices
+                totalCost = taxAmount + cost;
 
-                subTotalOutput.Text = $"{cost.ToString("$.00")}";
+                subTotalOutput.Text = $"{cost.ToString("$.00")}";//dollar amount outputs
                 taxOutput.Text = $"{taxAmount.ToString("C")}";
-                totalOutput.Text = $"{totalCost.ToString("C")}";//dollar amount outputs
+                totalOutput.Text = $"{totalCost.ToString("C")}";
             }
             catch
             {
@@ -97,60 +98,60 @@ namespace cash_register
                 this.Refresh();
                 Thread.Sleep(800);
 
-                receiptLine2.Text = "November 25, 2020";
+                receiptLine1.Text += "\nNovember 25, 2020";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
-                receiptLine3.Text = "Burgers";
-                receiptLine3Right.Text = $"x{burgerNum} @ {burgerPrice.ToString("$.00")}";
+                receiptLine1.Text += "\n\nBurgers";
+                receiptLine1.Text += $" x{burgerNum} @ {burgerPrice.ToString("$.00")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
-                receiptLine4.Text = "Fries";
-                receiptLine4Right.Text = $"x{fryNum} @ {fryPrice.ToString("C")}";
+                receiptLine1.Text += "\nFries";
+                receiptLine1.Text += $" x{fryNum} @ {fryPrice.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
-                receiptLine5.Text = "Drinks";
-                receiptLine5Right.Text = $"x{drinkNum} @ {drinkPrice.ToString("C")}";
+                receiptLine1.Text += "\nDrinks";
+                receiptLine1.Text += $" x{drinkNum} @ {drinkPrice.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
-                receiptLine6.Text = "Subtotal";
-                receiptLine6Right.Text = $"{cost.ToString("C")}";
+                receiptLine1.Text += "\n\nSubtotal";
+                receiptLine1.Text += $" {cost.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
-                receiptLine7.Text = "Tax";
-                receiptLine7Right.Text = $"{taxAmount.ToString("C")}";
+                receiptLine1.Text += "\nTax";
+                receiptLine1.Text += $" {taxAmount.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
-                receiptLine8.Text = "Total";
-                receiptLine8Right.Text = $"{totalCost.ToString("C")}";
+                receiptLine1.Text += "\nTotal";
+                receiptLine1.Text += $" {totalCost.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
-                receiptLine9.Text = "Tendered";
-                receiptLine9Right.Text = $"{tendered.ToString("C")}";
+                receiptLine1.Text += "\n\nTendered";
+                receiptLine1.Text += $" {tendered.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
-                receiptLine10.Text = "Change";
-                receiptLine10Right.Text = $"{change.ToString("C")}";
+                receiptLine1.Text += "\nChange";
+                receiptLine1.Text += $" {change.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
-                receiptLine11.Text = "Have a Burger-iffic Day!";
+                receiptLine1.Text += $"\n\nHave a Burger-iffic Day!";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
@@ -178,34 +179,20 @@ namespace cash_register
 
             receiptLabel.Text = "";//set all receipt lines blank
             receiptLine1.Text = "";
-            receiptLine2.Text = "";
-            receiptLine3.Text = "";
-            receiptLine3Right.Text = "";
-            receiptLine4.Text = "";
-            receiptLine4Right.Text = "";
-            receiptLine5.Text = "";
-            receiptLine5Right.Text = "";
-            receiptLine6.Text = "";
-            receiptLine6Right.Text = "";
-            receiptLine7.Text = "";
-            receiptLine7Right.Text = "";
-            receiptLine8.Text = "";
-            receiptLine8Right.Text = "";
-            receiptLine9.Text = "";
-            receiptLine9Right.Text = "";
-            receiptLine10.Text = "";
-            receiptLine10Right.Text = "";
-            receiptLine11.Text = "";
 
-            subTotalOutput.Text = "$0.00";
+            subTotalOutput.Text = "$0.00";//reset UI values
             taxOutput.Text = "$0.00";
             totalOutput.Text = "$0.00";
             changeOutput.Text = "$0.00"; 
             burgerInput.Text = "";
             fryInput.Text = "";
             drinkInput.Text = "";
-            tenderedInput.Text = ""; //reset UI values
+            tenderedInput.Text = ""; 
         }
 
+        private void ReceiptLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
