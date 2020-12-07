@@ -190,9 +190,5 @@ namespace cash_register
             tenderedInput.Text = ""; 
         }
 
-        private void ReceiptLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -211,7 +211,6 @@
             this.receiptLabel.Size = new System.Drawing.Size(231, 285);
             this.receiptLabel.TabIndex = 21;
             this.receiptLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.receiptLabel.Click += new System.EventHandler(this.ReceiptLabel_Click);
             // 
             // subTotalOutput
             // 
