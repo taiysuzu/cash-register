@@ -104,49 +104,49 @@ namespace cash_register
                 Thread.Sleep(800);
 
                 receiptLine1.Text += "\n\nBurgers";
-                receiptLine1.Text += $" x{burgerNum} @ {burgerPrice.ToString("$.00")}";
+                receiptLine1.Text += $"    x{burgerNum} @ {burgerPrice.ToString("$.00")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
                 receiptLine1.Text += "\nFries";
-                receiptLine1.Text += $" x{fryNum} @ {fryPrice.ToString("C")}";
+                receiptLine1.Text += $"      x{fryNum} @ {fryPrice.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
                 receiptLine1.Text += "\nDrinks";
-                receiptLine1.Text += $" x{drinkNum} @ {drinkPrice.ToString("C")}";
+                receiptLine1.Text += $"     x{drinkNum} @ {drinkPrice.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
                 receiptLine1.Text += "\n\nSubtotal";
-                receiptLine1.Text += $" {cost.ToString("C")}";
+                receiptLine1.Text += $"        {cost.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
                 receiptLine1.Text += "\nTax";
-                receiptLine1.Text += $" {taxAmount.ToString("C")}";
+                receiptLine1.Text += $"             {taxAmount.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
                 receiptLine1.Text += "\nTotal";
-                receiptLine1.Text += $" {totalCost.ToString("C")}";
+                receiptLine1.Text += $"           {totalCost.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
                 receiptLine1.Text += "\n\nTendered";
-                receiptLine1.Text += $" {tendered.ToString("C")}";
+                receiptLine1.Text += $"        {tendered.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);
 
                 receiptLine1.Text += "\nChange";
-                receiptLine1.Text += $" {change.ToString("C")}";
+                receiptLine1.Text += $"          {change.ToString("C")}";
                 printSound.Play();
                 this.Refresh();
                 Thread.Sleep(800);

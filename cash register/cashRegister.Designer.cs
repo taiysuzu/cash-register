@@ -195,7 +195,7 @@
             // 
             this.newOrderButton.Location = new System.Drawing.Point(159, 301);
             this.newOrderButton.Name = "newOrderButton";
-            this.newOrderButton.Size = new System.Drawing.Size(180, 23);
+            this.newOrderButton.Size = new System.Drawing.Size(231, 23);
             this.newOrderButton.TabIndex = 20;
             this.newOrderButton.Text = "New Order";
             this.newOrderButton.UseVisualStyleBackColor = true;
@@ -205,9 +205,10 @@
             // 
             this.receiptLabel.BackColor = System.Drawing.Color.White;
             this.receiptLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.receiptLabel.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.receiptLabel.Location = new System.Drawing.Point(159, 10);
             this.receiptLabel.Name = "receiptLabel";
-            this.receiptLabel.Size = new System.Drawing.Size(180, 285);
+            this.receiptLabel.Size = new System.Drawing.Size(231, 285);
             this.receiptLabel.TabIndex = 21;
             this.receiptLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.receiptLabel.Click += new System.EventHandler(this.ReceiptLabel_Click);
@@ -252,16 +253,17 @@
             // 
             this.receiptLine1.AutoSize = true;
             this.receiptLine1.BackColor = System.Drawing.Color.White;
+            this.receiptLine1.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.receiptLine1.Location = new System.Drawing.Point(174, 51);
             this.receiptLine1.Name = "receiptLine1";
-            this.receiptLine1.Size = new System.Drawing.Size(0, 13);
+            this.receiptLine1.Size = new System.Drawing.Size(0, 14);
             this.receiptLine1.TabIndex = 26;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 343);
+            this.ClientSize = new System.Drawing.Size(402, 343);
             this.Controls.Add(this.receiptLine1);
             this.Controls.Add(this.changeOutput);
             this.Controls.Add(this.totalOutput);
